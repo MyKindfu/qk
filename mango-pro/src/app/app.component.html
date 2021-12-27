@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="slider">
+    <ul class="menu">
+      <li (click)="go('home')">Home</li>
+      <li (click)="go('dashboard')">Dashboard</li>
+      <li>About</li>
+    </ul>
+  </div>
+  <div class="right">
+    <router-outlet></router-outlet>
+
+    <!--子应用渲染容器-->
+    <main id="subapp-container">
+      <div id="subapp-viewport"></div>
+    </main>
+  </div>
+</div>
